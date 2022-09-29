@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>project.html</title>
+    <link href="project.css" type="text/css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- header -->
+    <header class="abx top">
+      <div class="bbx top1">
+        <h1 class="logo">
+          <a href="#">
+            <img src="images/cafe_logo.jpg" alt="로고" />
+          </a>
+        </h1>
+      </div>
+      <div class="bbx top2">
+        <ul class="cbx">
+          <li>
+            <a href="#">Coffee</a>
+            <ol>
+              <li><a href="#">Espresso</a></li>
+              <li><a href="#">ColdBrew</a></li>
+              <li><a href="#">Decaf</a></li>
+            </ol>
+          </li>
+          <li>
+            <a href="#">Smoothie</a>
+            <ol>
+              <li><a href="#">Frappuccino</a></li>
+              <li><a href="#">blended</a></li>
+            </ol>
+          </li>
+          <li>
+            <a href="#">Tea&Aid</a>
+            <ol>
+              <li><a href="#">Tea</a></li>
+              <li><a href="#">Aid</a></li>
+            </ol>
+          </li>
+          <li>
+            <a href="#">Food</a>
+            <ol>
+              <li><a href="#">Sandwich</a></li>
+              <li><a href="#">Salad</a></li>
+              <li><a href="#">Ect</a></li>
+            </ol>
+          </li>
+          <li>
+            <a href="#">기타</a>
+            <ol>
+              <li><a href="#">원두 원산지</a></li>
+              <li><a href="#">가맹점 문의</a></li>
+            </ol>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <!-- B -->
+    <section class="abx mid">
+      <!--슬라이드-->
+      <ul class="silde">
+        <li>
+          <a href="#">
+            <img src="images/cafe_latte.png" alt="슬라이드1" />
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="images/sandwich.png" alt="슬라이드2" />
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="images/macarong.jpg" alt="슬라이드3" />
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="images/goguma.jpg" alt="슬라이드4" />
+          </a>
+        </li>
+      </ul>
+    </section>
+    <!-- C -->
+    <main class="abx cont">
+      <div class="bbx">
+        <!-- 탭메뉴 -->
+        <ol class="tm">
+          <li class="on" onclick="chg(0,1)">
+            <a href="#">오늘의 메뉴</a>
+          </li>
+          <li onclick="chg(1,0)">
+            <a href="#">카페 이벤트</a>
+          </li>
+        </ol>
+        <!-- 탭내용 -->
+        <ol class="tc">
+          <!--오늘의 음료-->
+          <li class="on">
+            <ul class="today">
+              <li>
+                <a href="#">
+                  <img src="images/goguma.jpg" alt="음료이미지" />
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="images/saltbread.jpg" alt="푸드이미지" />
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="images/macarong.jpg" alt="간식이미지" />
+                </a>
+              </li>
+            </ul>
+          </li>
+          <!-- 카페 이벤트 -->
+          <ul class="cafe">
+            <li>
+              <a href="#" onclick="popup('block')">
+                [발표] 월요일 아메리카노 23번째 구매 손님 이벤트 당첨자
+              </a>
+              <span>2021.12.10</span>
+            </li>
+            <li>
+              <a href="#"> [발표] 수요일 푸드 3번째 구매 손님 이벤트 당첨자 </a>
+              <span>2021.12.13</span>
+            </li>
+            <li>
+              <a href="#"> [발표] 금요일 11번째 방문 손님 이벤트 당첨자 </a>
+              <span>2021.12.16</span>
+            </li>
+            <li>
+              <a href="#">
+                [발표] 일요일 행운의 번호 당첨 손님 이벤트 당첨자
+              </a>
+              <span>2021.12.20</span>
+            </li>
+          </ul>
+        </ol>
+      </div>
+    </main>
+    <!-- D -->
+    <footer class="abx info">
+      <div class="bbx info1">
+        <h2 class="logo">
+          <a href="#">
+            <img src="" alt="하단로고" />
+          </a>
+        </h2>
+      </div>
+      <div class="bbx info2">
+        <!--카피라잇-->
+        Copyright JUST Cafe All rights reserved.
+      </div>
+      <div class="bbx info3">
+        <!-- sns -->
+        <a href="#">
+          <img src="images/sns1.png" alt="페이스북" />
+        </a>
+        <a href="#">
+          <img src="images/sns2.png" alt="트위터" />
+        </a>
+        <a href="#">
+          <img src="images/sns3.png" alt="카카오톡" />
+        </a>
+      </div>
+    </footer>
+
+    <!-- 팝업창 -->
+    <div class="pop">
+      <!-- 제목 -->
+      <h1>
+        [발표] 월요일 아메리카노 23번째 구매 손님
+        <br />이벤트 당첨자
+      </h1>
+      <!-- 내용 -->
+      <p>
+        안녕하세요! 승 카페입니다.
+        <br /><br />
+        12월 1일에 진행된 '월요일 아메리카노 23번째 구매 손님 이벤트' 당첨자를
+        아래와 같이 안내드립니다. 당첨자분께 상품을 별도 안내를 통해 지급될
+        예정입니다.
+        <br /><br />
+        ●당첨 상품 : 음료무료교환권 3매
+        <br />
+        ●당첨 대상 : 이벤트에 참여하신 회원 중 아메리카노 23번째 구매 손님
+        <br />
+        ●지급 방식 : 12월 25일 고객에게 문자로 안내 후 지급
+      </p>
+      <!-- 버튼박스 -->
+      <div class="dbx">
+        <button onclick="popup('none')">닫기</button>
+      </div>
+    </div>
+  </body>
+</html>
