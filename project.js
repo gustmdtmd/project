@@ -17,13 +17,21 @@ setInterval(function () {
 }, 1000);
 
 //오늘의메뉴 및 카페이벤트 구현
-function chgTap(i1, i2) {
-  let tm = document.querySelectorAll(`.tm>li`);
-  let tc = document.querySelectorAll(`.tc>li`);
+function chgTab(i1, i2) {
+  let tm = document.querySelectorAll(".tm>li");
+  let tc = document.querySelectorAll(".tc>li");
 
-  tm[il].classList.add(`on`);
+  tm[i1].classList.add(`on`);
   tc[i1].classList.add(`on`);
 
   tm[i2].classList.remove(`on`);
   tc[i2].classList.remove(`on`);
+}
+
+/////////////////////////////////////////
+//팝업창 닫기
+
+function popup(sts) {
+  let pop = document.querySelector(`.pop`);
+  pop.style.display = sts;
 }

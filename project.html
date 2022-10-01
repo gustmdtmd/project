@@ -92,16 +92,43 @@
         <!-- 탭메뉴 -->
         <ol class="tm">
           <li class="on" onclick="chgTab(0,1)">
-            <a href="#">오늘의 메뉴</a>
+            <a href="#">카페 이벤트</a>
           </li>
           <li onclick="chgTab(1,0)">
-            <a href="#">카페 이벤트</a>
+            <a href="#">오늘의 메뉴</a>
           </li>
         </ol>
         <!-- 탭내용 -->
         <ol class="tc">
-          <!--오늘의 음료-->
+          <!-- 카페 이벤트 -->
           <li class="on">
+            <ul class="cafe">
+              <li>
+                <a href="#" onclick="popup('block')">
+                  [발표] 월요일 아메리카노 23번째 구매 손님 이벤트 당첨자
+                </a>
+                <span>2021.12.10</span>
+              </li>
+              <li>
+                <a href="#">
+                  [발표] 수요일 푸드 3번째 구매 손님 이벤트 당첨자
+                </a>
+                <span>2021.12.13</span>
+              </li>
+              <li>
+                <a href="#"> [발표] 금요일 11번째 방문 손님 이벤트 당첨자 </a>
+                <span>2021.12.16</span>
+              </li>
+              <li>
+                <a href="#">
+                  [발표] 일요일 행운의 번호 당첨 손님 이벤트 당첨자
+                </a>
+                <span>2021.12.20</span>
+              </li>
+            </ul>
+          </li>
+          <!--오늘의 음료-->
+          <li>
             <ul class="today">
               <li>
                 <a href="#">
@@ -120,29 +147,6 @@
               </li>
             </ul>
           </li>
-          <!-- 카페 이벤트 -->
-          <ul class="cafe">
-            <li>
-              <a href="#" onclick="popup('block')">
-                [발표] 월요일 아메리카노 23번째 구매 손님 이벤트 당첨자
-              </a>
-              <span>2021.12.10</span>
-            </li>
-            <li>
-              <a href="#"> [발표] 수요일 푸드 3번째 구매 손님 이벤트 당첨자 </a>
-              <span>2021.12.13</span>
-            </li>
-            <li>
-              <a href="#"> [발표] 금요일 11번째 방문 손님 이벤트 당첨자 </a>
-              <span>2021.12.16</span>
-            </li>
-            <li>
-              <a href="#">
-                [발표] 일요일 행운의 번호 당첨 손님 이벤트 당첨자
-              </a>
-              <span>2021.12.20</span>
-            </li>
-          </ul>
         </ol>
       </div>
     </main>
@@ -201,4 +205,3 @@
     </div>
   </body>
 </html>
-````````````````
