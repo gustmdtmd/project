@@ -139,8 +139,10 @@ li {
 /*===============오늘의메뉴 및 카페 이벤트=======================*/
 
 .cont > .bbx {
-  width: 800px;
-  /* background-color: yellow; */
+  position: relative;
+  left: 200px;
+  width: 820px;
+  background-color: yellow;
 }
 
 /* 탭메뉴 */
@@ -148,11 +150,6 @@ li {
   width: 800px;
   height: 40px;
   /* background-color: red; */
-}
-
-.tm li {
-  position: relative;
-  left: 230px;
 }
 
 .tm li a {
@@ -175,8 +172,6 @@ li {
 }
 
 .tc > li {
-  width: 100%;
-  height: 100%;
   display: none;
 }
 
@@ -186,10 +181,7 @@ li {
 
 /*  갤러리 리스트 */
 .today li {
-  padding-top: 10px;
-  padding-left: 10px;
-  position: relative;
-  left: 260px;
+  margin: 10px 10px;
 }
 
 .today img {
@@ -197,17 +189,10 @@ li {
   border: 1px solid #777;
 }
 
-.today li a {
-  float: right;
-}
-
 /* 카페 이벤트 */
 .cafe {
   padding-top: 9px;
   padding-left: 7px;
-  position: relative;
-  top: 10px;
-  left: 280px;
 }
 
 .cafe li {
@@ -221,4 +206,9 @@ li {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+
+.cafe span {
+  float: right;
+  padding-right: 5px;
 }

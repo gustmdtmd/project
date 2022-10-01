@@ -18,8 +18,8 @@ setInterval(function () {
 
 //오늘의메뉴 및 카페이벤트 구현
 function chgTap(i1, i2) {
-  let tm = document.querySelectorAll(`.tm > li`);
-  let tc = document.querySelectorAll(`.tc > li`);
+  let tm = document.querySelectorAll(`.tm>li`);
+  let tc = document.querySelectorAll(`.tc>li`);
 
   tm[il].classList.add(`on`);
   tc[i1].classList.add(`on`);
