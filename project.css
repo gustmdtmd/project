@@ -27,13 +27,8 @@ li {
 /*     공통 css*/
 
 /* 가운데 정렬 */
-.abx .top {
+.abx {
   width: 1200px;
-  margin: 0 auto;
-}
-
-.abx .mid {
-  width: 200px;
   margin: 0 auto;
 }
 
@@ -131,12 +126,99 @@ li {
 
 /*===============슬라이딩===================*/
 .mid {
-  width: 200px;
-  height: 400px;
+  width: 400px;
+  height: 200px;
   overflow: hidden;
 }
 
 .slide {
   position: relative;
   left: 0;
+}
+
+/*===============오늘의메뉴 및 카페 이벤트=======================*/
+
+.cont > .bbx {
+  width: 800px;
+  /* background-color: yellow; */
+}
+
+/* 탭메뉴 */
+.tm {
+  width: 800px;
+  height: 40px;
+  /* background-color: red; */
+}
+
+.tm li {
+  position: relative;
+  left: 230px;
+}
+
+.tm li a {
+  display: block;
+  width: 400px;
+  text-align: center;
+  line-height: 40px;
+  color: #fff;
+  background-color: rgb(125, 31, 8);
+}
+
+.tm li.on a {
+  background-color: rgb(99, 63, 63);
+}
+
+/* 탭 내용 */
+.tc {
+  height: 138px;
+  background-color: #fff;
+}
+
+.tc > li {
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+
+.tc > li.on {
+  display: block;
+}
+
+/*  갤러리 리스트 */
+.today li {
+  padding-top: 10px;
+  padding-left: 10px;
+  position: relative;
+  left: 260px;
+}
+
+.today img {
+  width: 100px;
+  border: 1px solid #777;
+}
+
+.today li a {
+  float: right;
+}
+
+/* 카페 이벤트 */
+.cafe {
+  padding-top: 9px;
+  padding-left: 7px;
+  position: relative;
+  top: 10px;
+  left: 280px;
+}
+
+.cafe li {
+  line-height: 24px;
+  /* border: 1px solid black;*/
+}
+
+.cafe a {
+  display: inline-block;
+  width: 270px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
