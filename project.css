@@ -139,8 +139,8 @@ li {
 /*===============오늘의메뉴 및 카페 이벤트=======================*/
 
 .cont > .bbx {
-  width: 420px;
-  /*background-color: yellow;*/
+  width: 400px;
+  /* background-color: yellow; */
 }
 
 /* 탭메뉴 */
@@ -205,7 +205,7 @@ li {
 
 /*  갤러리 리스트 */
 .today li {
-  margin: 10px 10px;
+  margin: 18px 15px;
 }
 
 .today img {
@@ -214,9 +214,10 @@ li {
 }
 
 /*===========Footer===============*/
-.info {
-  float: left;
+.info .bbx {
+  background-color: yellow;
 }
+
 .info1 {
   width: 200px;
 }
