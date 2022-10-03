@@ -4,7 +4,7 @@ setInterval(function () {
   let sl = document.querySelector(".silde");
 
   sl.style.left = "-100%";
-  sl.style.transition = "1s";
+  sl.style.transition = "1.5s";
 
   setTimeout(function () {
     console.log(sl.querySelectorAll("li").length);
@@ -13,8 +13,8 @@ setInterval(function () {
     sl.appendChild(first);
     sl.style.left = "0";
     sl.style.transition = "none";
-  }, 1000);
-}, 1000);
+  }, 1500);
+}, 1500);
 
 //오늘의메뉴 및 카페이벤트 구현
 function chgTab(i1, i2) {

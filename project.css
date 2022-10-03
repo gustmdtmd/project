@@ -89,7 +89,6 @@ li {
   display: block;
   width: 100%;
   height: 100%;
-
   font-size: 20px;
   font-weight: bold;
   line-height: 50px;
@@ -102,7 +101,6 @@ li {
   overflow: hidden;
 }
 
-/*메뉴아래 서브메뉴 .gnb::before와 관련 */
 .cbx:hover ol,
 .cbx:hover::before {
   height: 150px;
@@ -126,7 +124,7 @@ li {
 
 /*===============슬라이딩===================*/
 .mid {
-  width: 400px;
+  width: 800px;
   height: 200px;
   overflow: hidden;
 }
@@ -165,8 +163,11 @@ li {
 
 /* 탭 내용 */
 .tc {
+  width: 390px;
   height: 138px;
   background-color: #fff;
+  border: 5px solid rgb(125, 31, 8);
+  border-top: 0;
 }
 
 .tc > li {
@@ -209,7 +210,7 @@ li {
 }
 
 .today img {
-  width: 100px;
+  width: 95px;
   border: 1px solid #777;
 }
 
